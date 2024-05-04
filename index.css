@@ -1,0 +1,514 @@
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*                                                            Cuerpos                                                  */
+
+body {
+  margin: 0;
+  background-color: whitesmoke;
+}
+header {
+  background-color: rgb(223, 93, 93);
+  color: white;
+  padding: 1rem 1rem;
+}
+header h1{
+padding: 1rem;
+  font-size: 1.5rem;
+  text-align: flex-end;
+}
+.lg {
+margin: 0rem;
+display: flex;
+flex-direction: row;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top:20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight:bold ;
+}
+h4{
+  font-size: 25px;
+  padding: 0rem;
+  margin: 0rem;
+}
+ul li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+a{
+  color:blue;
+  text-decoration: none;
+}
+a:hover{
+  color: red;
+}
+
+/*                                                  Iniciar Seccion                                         */
+
+  .iniciar {                             
+  float: right;
+  color: white;
+  padding: 4rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/*                                                         logo                                                 */
+
+.logo {         
+  width: 100px;
+}
+.entrada {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 2rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.container{
+  width: 550px;
+  margin: 0 auto;
+}
+              /* cuerpo */
+section article {
+  transition: box-shadow 0.3s ease;
+  background-color: #ffff;
+  margin: 1rem ;
+  border-radius: 0.5rem;
+  padding: 0.30rem 0;
+  cursor: pointer;
+}
+section article:hover{
+  box-shadow: 0 0.4rem 5.4rem rgba(238, 10, 10, 0.993);
+}
+section article h2, section article p {
+margin: 1rem;    
+}
+.link{
+  margin: 1rem;
+}
+.imagen {
+  margin: 1rem;
+}
+
+/*                                                         Partado de Iniciar Seccion                                                        
+
+.inse{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.inse {
+  
+  background-color: #ffc9c9;
+  background: linear-gradient(to right, #e2e2e2, #ffc9c9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.con {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+.con p{
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  margin: 20px 0;
+}
+.con span {
+  font-size: 12px;
+}
+.con a{
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+  margin: 15px 0 10px;
+}
+.con button {
+  background-color: #512da8;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.con button.hidden{
+  background-color: transparent;
+    border-color: #fff;
+}
+.con form{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  height: 100%;
+}
+.con input{
+  background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+.form-con{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+}
+.sign-in{
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+.con-active .sign-in{
+  transform: translateX(100%);
+
+}
+.sign-up {
+  left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+.con-active .sign-up{
+  transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+@keyframes move {
+  0%, 49.99%{
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  50%, 100%{
+    opacity: 1;
+    z-index: 5;
+  }
+}
+.social-icons{
+  margin: 20px 0;
+
+}
+.social-icons a{
+  border: 1px solid #ccc;
+  border-radius: 20%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 3px;
+  width: 40px;
+  height: 40px;
+}
+.toggle-con{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+  border-radius: 150px 0 0 100px;
+  z-index: 1000;
+}
+.con.active .toggle-con{
+  transform: translateX(-100%);
+  border-radius: 0 150px 100px 0;
+}
+.toggle{
+  background-color: #ffc9c9;
+  height: 100%;
+  background: linear-gradient(to right, #df4848, #d11313);
+  color: #fff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: all 0.6s ease-in-out;
+}
+.con.active .toggle{
+  transform: translateX(50%);
+}
+.toggle-panel{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px;
+  text-align: center;
+  top: 0;
+  transform: translateX(0);
+  transition: all 0.6s ease-in-out;
+}
+.toggle-left{
+  transform: translateX(-200%);
+}
+.con.active .toggle-left{
+  transform: translateX(0);
+}
+.toggle-right{
+  right: 0;
+  transform: translateX(0);
+}
+.con.active .toggle-right{
+  transform: translateX(200%);
+}
+
+*/
+
+/*---------------------------------------------------------Estilo de Iniciar Seccion---------------------------------------*/ 
+
+.inse{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffd9d9;
+}
+.cont{
+    width: 800px;
+    height: 500px;
+    display: flex;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.401);
+}
+.cont-form{
+    width: 100%;
+    overflow: hidden;
+}
+.cont-form form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in;
+}
+.cont-form h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.social-networks{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+.social-networks ion-icon{
+    border: 1px solid #C9CCCB;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+}
+.cont-form span{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.cont-input{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 15px;
+    background-color: #EEEEEE;
+}
+.cont-input input{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+}
+.cont-form a{
+    color: black;
+    font-size:  14px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.button{
+    width: 170px;
+    height: 45px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;  
+    background-color: #df0000b1;  
+    color: white;
+}
+/*Animation form*/
+
+.sign-up{
+    transform: translateX(-100%);
+}
+.cont.toggle .sign-in{
+    transform: translateX(100%);
+}
+.cont.toggle .sign-up{
+    transform: translateX(0);
+}
+
+/*Welcome*/
+.cont-welcome{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(100%);
+    background-color: #df0000b1;
+    transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+    overflow: hidden;
+    border-radius: 50% 0 0 50%;
+}
+.cont.toggle .cont-welcome{
+    transform: translateX(0);
+    border-radius: 0 50% 50% 0;
+    background-color: #df0000b1;
+}
+.cont-welcome .welcome{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 50px;
+    color: white;
+    transition: transform 0.5s ease-in-out;
+}
+.welcome-sign-in{
+    transform: translateX(100%);
+}
+.cont-welcome h3{
+    font-size: 40px;
+}
+.cont-welcome p{
+    font-size: 14px;
+    text-align: center;
+}
+.cont-welcome .button{
+    border: 2px solid white;
+    background-color: transparent;
+}
+
+.cont.toggle .welcome-sign-in{
+    transform: translateX(0);
+}
+.cont.toggle .welcome-sign-up{
+    transform: translateX(-100%);
+}
+
+
+/*-----------------------------hasta aqui llega el estilo de Sign In & Create Account-------------------------------------*/
+
+.base {
+  text-align:center;
+}
+.logo1 {
+  width: 150px;
+}
+
+/*---------------------------------------------------------------Estilo de Laptop---------------------------------------*/
+.txt{
+display: flex;
+flex-direction:row ;
+}
+.Laptop {         
+padding: 1rem;
+width: 210px;
+height: 190px;
+}
+/*-------------------------------------------------hasta aqui llega el estilo de Laptop-------------------------------------*/
+
+
+/*-----------------------------------------------------------Estilo de Accesorio---------------------------------------*/
+
+.acc {
+padding: 1rem;
+width: 190px;
+height: 250px;
+}
+/*--------------------------------------------------------------hasta aqui llega el estilo de Accesorio-------------------------------------*/
+
+
+/*--------------------------------------------------------------------------Estilo de Accesorio---------------------------------------*/
+
+.consola {
+  padding: 1rem;
+  width: 200px;
+  height: 250px;
+  }
+  h2 {
+    font-size: 1.9rem;
+  }
+  p {
+  font-size: 1.4rem;
+  }
+  /*-----------------------------------------------------------------hasta aqui llega el estilo de Accesorio-------------------------------------*/
+  
+  
+  /*                                                                         Pies de Pagina                                     */
+
+  footer {
+  background-color: #df5d5d;
+  padding: 1.5rem;
+  color: #fff;
+}
+footer section {
+  float: right;
+}
+footer p {
+  margin: 0;
+}
+footer a {
+  transition: color 0.3 ease;
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  color: cornflowerblue;
+}
